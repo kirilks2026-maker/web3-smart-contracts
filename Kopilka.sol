@@ -19,7 +19,11 @@ contract SergeyPiggyBank {
         payable(owner).transfer(address(this).balance);
     }
 
-    function getBalance() public view uint256 {
+    // Наша спасительная функция для приема прямых gwei из Метамаска
+    receive() external payable {}
+
+    function getBalance() public view returns (uint256) {
         return address(this).balance;
     }
 }
+
