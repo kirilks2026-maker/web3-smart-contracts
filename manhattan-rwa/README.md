@@ -35,3 +35,8 @@ This smart contract enables fractional real estate investment and automated asse
 - **Solidity Version:** `^0.8.20`
 - **License:** MIT
 - **Category:** RWA / Real Estate Tokenization / Call Option Protocol
+---
+
+📌 **Version Architecture:**
+- `ManhattanRWA_v2.sol` — **Production Version:** Includes automated Call Option registry, liquidity reserve escrow, and automated ETH dividend distribution.
+- `Manhattan.sol` — **v1 Prototype:** Archived initial property tokenization foundation.
